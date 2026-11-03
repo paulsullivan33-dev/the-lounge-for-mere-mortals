@@ -1,0 +1,43 @@
+$ thelounge add reader   (password set at the prompt - a lab fixture password)
+2026-11-03 01:31:42 [WARN] You are currently running The Lounge as root. We highly discourage running as root!
+2026-11-03 01:31:42 [ERROR] /home/hatch/workspace/the-lounge-labwork/home-private/users does not exist.
+
+$ thelounge list
+2026-11-03 01:31:43 [WARN] You are currently running The Lounge as root. We highly discourage running as root!
+2026-11-03 01:31:43 [INFO] There are currently no users. Create one with thelounge add <name>.
+
+$ ls home-private/users/
+ls: cannot access 'home-private/users/': No such file or directory
+
+$ python3: keys of reader.json (password hash truncated)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'home-private/users/reader.json'
+
+# The users folder only appears after the server has run once; creating it by hand fixes add:
+$ mkdir -p home-private/users
+$ thelounge add reader   (same command again)
+2026-11-03 01:31:47 [WARN] You are currently running The Lounge as root. We highly discourage running as root!
+2026-11-03 01:31:47 [PROMPT] Enter password: 2026-11-03 01:31:47 [PROMPT] Save logs to disk? (yes) 
+$ thelounge list
+2026-11-03 01:31:47 [WARN] You are currently running The Lounge as root. We highly discourage running as root!
+2026-11-03 01:31:47 [INFO] There are currently no users. Create one with thelounge add <name>.
+
+$ python3: keys of reader.json (password hash truncated)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'home-private/users/reader.json'
+
+# The prompt path needs a real terminal; the CLI also takes flags:
+$ thelounge add reader --password <fixture password> --save-logs
+2026-11-03 01:31:57 [WARN] You are currently running The Lounge as root. We highly discourage running as root!
+2026-11-03 01:31:57 [INFO] User reader created.
+2026-11-03 01:31:57 [INFO] User file located at /home/hatch/workspace/the-lounge-labwork/home-private/users/reader.json.
+
+$ thelounge list
+2026-11-03 01:31:58 [WARN] You are currently running The Lounge as root. We highly discourage running as root!
+2026-11-03 01:31:58 [INFO] Users:
+2026-11-03 01:31:58 [INFO] 1. reader
+
+$ python3: keys of reader.json (password hash truncated)
+{'password': '$2a$11$B8x9wY5wb4B...', 'log': True}

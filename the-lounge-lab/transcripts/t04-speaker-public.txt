@@ -1,0 +1,28 @@
+[01:30:37] >>> NICK greeter
+[01:30:37] >>> USER greeter 0 * :greeter (lab fixture)
+[01:30:37] <<< :localhost 001 greeter :Hi, welcome to IRC
+[01:30:37] >>> JOIN #lounge-lab
+[01:30:37] <<< :localhost 002 greeter :Your host is localhost, running version miniircd-2.3
+[01:30:37] <<< :localhost 003 greeter :This server was created sometime
+[01:30:37] <<< :localhost 004 greeter localhost miniircd-2.3 o o
+[01:30:37] <<< :localhost 251 greeter :There are 1 users and 0 services on 1 server
+[01:30:37] <<< :localhost 375 greeter :- localhost Message of the day -
+[01:30:37] <<< :localhost 372 greeter :- Welcome to the lab IRC server.
+[01:30:37] <<< :localhost 372 greeter :- This is a fixture for a guide lab: invented, local, loopback only.
+[01:30:37] <<< :localhost 376 greeter :End of /MOTD command
+[01:30:37] <<< :greeter!greeter@127.0.0.1 JOIN #lounge-lab
+[01:30:37] <<< :localhost 331 greeter #lounge-lab :No topic is set
+[01:30:37] <<< :localhost 353 greeter = #lounge-lab :greeter
+[01:30:37] <<< :localhost 366 greeter #lounge-lab :End of NAMES list
+[01:30:40] <<< :lounger!lounger@127.0.0.1 JOIN #lounge-lab
+[01:30:42] <<< :lounger!lounger@127.0.0.1 PRIVMSG #lounge-lab :Hello from The Lounge window
+[01:30:42] >>> PRIVMSG #lounge-lab :Afternoon, the fixture channel is open for the lab.
+[01:30:43] <<< :lounger!lounger@127.0.0.1 PRIVMSG #lounge-lab :ACTION settles in
+[01:30:48] >>> PRIVMSG #lounge-lab :lounger: that one was aimed at you, your client should flag it
+[01:30:55] <<< :lounger!lounger@127.0.0.1 QUIT :The Lounge - https://thelounge.chat
+[01:30:58] >>> NAMES #lounge-lab
+[01:30:58] <<< :localhost 353 greeter = #lounge-lab :greeter
+[01:30:58] <<< :localhost 366 greeter #lounge-lab :End of NAMES list
+[01:31:01] >>> PRIVMSG #lounge-lab :Note the NAMES reply above - the lounger has gone
+[01:31:04] >>> PART #lounge-lab :bye
+[01:31:04] >>> QUIT :speaker done

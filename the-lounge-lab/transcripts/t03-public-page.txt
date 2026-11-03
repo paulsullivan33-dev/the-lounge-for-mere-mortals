@@ -1,0 +1,66 @@
+$ curl -sI http://127.0.0.1:18093/
+HTTP/1.1 200 OK
+X-Content-Type-Options: nosniff
+Content-Security-Policy: block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'self'; connect-src 'self' ws: wss:; style-src 'self' https: 'unsafe-inline'; script-src 'self'; worker-src 'self'; manifest-src 'self'; font-src 'self' https:; media-src 'self' https:; img-src 'self' data: https://user-images.githubusercontent.com
+Referrer-Policy: no-referrer
+Content-Type: text/html; charset=utf-8
+Content-Length: 3403
+ETag: W/"d4b-WhKRJGidwhNiTqhSeluYiNq0paw"
+Date: Tue, 03 Nov 2026 01:28:12 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+
+$ curl -s http://127.0.0.1:18093/ | head -30
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, interactive-widget=resizes-content"
+		/>
+		<link rel="preload" as="script" href="js/loading-error-handlers-56220324.js" />
+
+		<title>The Lounge</title>
+
+		<!-- Browser tab icon -->
+		<link
+			id="favicon"
+			rel="icon"
+			sizes="16x16 32x32 64x64"
+			href="favicon.ico"
+			data-other="img/favicon-alerted.ico"
+			type="image/x-icon"
+		/>
+
+		<!-- Safari pinned tab icon -->
+		<link rel="mask-icon" href="img/icon-black-transparent-bg.svg" color="#415364" />
+
+		<link rel="manifest" href="thelounge.webmanifest" />
+
+		<!-- iPhone 4, iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s, iPhone 6, iPhone 6s, iPhone 7, iPhone 7s, iPhone8 -->
+		<link rel="apple-touch-icon" sizes="120x120" href="img/logo-grey-bg-120x120px.png" />
+		<!-- iPad and iPad mini @2x -->
+
+$ curl -s http://127.0.0.1:18093/ | grep -o "window.__thelounge__config[^<]*" | head -c 600
+
+
+$ ls home-public/
+config.js
+logs
+packages
+users
+vapid.json
+
+$ head -40 home-public/config.js (as generated on first run)
+17:    public: false,
+26:    host: undefined,
+32:    port: 9000,
+47:    // ### `maxHistory`
+54:    maxHistory: 10000,
+125:    // (controlled by `maxHistory`), and the folder is cleaned up when The Lounge
+232:    //   host: "irc.libera.chat",
+233:    //   port: 6697,
+245:        host: "irc.libera.chat",
+246:        port: 6697,

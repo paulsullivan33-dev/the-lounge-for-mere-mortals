@@ -1,0 +1,29 @@
+[01:32:20] >>> NICK greeter
+[01:32:20] >>> USER greeter 0 * :greeter (lab fixture)
+[01:32:20] <<< :localhost 001 greeter :Hi, welcome to IRC
+[01:32:20] >>> JOIN #lounge-lab
+[01:32:20] <<< :localhost 002 greeter :Your host is localhost, running version miniircd-2.3
+[01:32:20] <<< :localhost 003 greeter :This server was created sometime
+[01:32:20] <<< :localhost 004 greeter localhost miniircd-2.3 o o
+[01:32:20] <<< :localhost 251 greeter :There are 1 users and 0 services on 1 server
+[01:32:20] <<< :localhost 375 greeter :- localhost Message of the day -
+[01:32:20] <<< :localhost 372 greeter :- Welcome to the lab IRC server.
+[01:32:20] <<< :localhost 372 greeter :- This is a fixture for a guide lab: invented, local, loopback only.
+[01:32:20] <<< :localhost 376 greeter :End of /MOTD command
+[01:32:20] <<< :greeter!greeter@127.0.0.1 JOIN #lounge-lab
+[01:32:20] <<< :localhost 331 greeter #lounge-lab :No topic is set
+[01:32:20] <<< :localhost 353 greeter = #lounge-lab :greeter
+[01:32:20] <<< :localhost 366 greeter #lounge-lab :End of NAMES list
+[01:32:24] <<< :reader!lounger@127.0.0.1 JOIN #lounge-lab
+[01:32:27] <<< :reader!lounger@127.0.0.1 PRIVMSG #lounge-lab :First message from the signed-in reader
+[01:32:28] >>> PRIVMSG #lounge-lab :Welcome in, reader - this one arrives live
+[01:32:31] >>> PRIVMSG #lounge-lab :reader: a highlight while you are watching
+[01:32:39] >>> PRIVMSG #lounge-lab :While you were away: missed message one
+[01:32:42] >>> PRIVMSG #lounge-lab :reader: a highlight that waited for you
+[01:32:45] >>> PRIVMSG #lounge-lab :While you were away: missed message three
+[01:32:58] >>> NAMES #lounge-lab
+[01:32:58] <<< :localhost 353 greeter = #lounge-lab :greeter reader
+[01:32:58] <<< :localhost 366 greeter #lounge-lab :End of NAMES list
+[01:33:02] >>> PART #lounge-lab :bye
+[01:33:02] >>> QUIT :speaker done
+[01:33:02] <<< :greeter!greeter@127.0.0.1 PART #lounge-lab :bye

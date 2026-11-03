@@ -1,0 +1,20 @@
+$ node --version / npm --version / python3 --version / uname / os-release
+$ node --version
+v24.22.1
+$ npm --version
+10.9.4
+$ python3 --version
+Python 3.12.3
+$ uname -a
+Linux htch-runtime 7.0.0-39-generic #1 SMP PREEMPT_DYNAMIC Thu Sep 24 08:42:15 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+$ cat /etc/os-release | head -3
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+
+$ npm view thelounge version dist-tags
+version = '4.5.2'
+dist-tags = { latest: '4.5.2', next: '4.6.0-pre.2' }
+
+$ python3 miniircd --version (fixture IRC server)
+2.3

@@ -1,0 +1,28 @@
+site_name: The Lounge for Mere Mortals
+site_description: A web client for IRC that stays connected when your browser is not. Running The Lounge on your own machine, its public and private modes, user accounts, message storage that survives restarts, file uploads, themes, and the limits stated plainly.
+site_url: https://paulsullivan33-dev.github.io/the-lounge-for-mere-mortals/
+copyright: 'Part of <a href="https://paulsullivan33-dev.github.io/mere-mortals/">For Mere Mortals</a> · Text <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, code MIT'
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - What The Lounge Is: what-the-lounge-is.md
+  - The Moving Parts: the-moving-parts.md
+  - Installing The Lounge: installing-the-lounge.md
+  - Your First Session: your-first-session.md
+  - Private Mode and Users: private-mode-and-users.md
+  - Staying Connected: staying-connected.md
+  - Message Storage and Logs: message-storage-and-logs.md
+  - File Uploads: file-uploads.md
+  - Themes and Packages: themes-and-packages.md
+  - Configuration: configuration.md
+  - Recipes: recipes.md
+  - The Neighbours: the-neighbours.md
+  - Limits: limits.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md

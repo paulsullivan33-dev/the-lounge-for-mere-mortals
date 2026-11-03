@@ -1,0 +1,17 @@
+[01:34:08] socket connected FDgVOoljEqY53Rv-AAAD
+[01:34:08] event auth:start (server asks for sign-in)
+[01:34:08] sent auth:perform with saved session token
+[01:34:08] event configuration: public=false themes=[default, morning, thelounge-theme-solarized] fileUpload=enabled defaultNetwork=Libera.Chat
+[01:34:08] event auth:success
+[01:34:08] event init: active=-1 networks=2
+[01:34:08]  network "LabNet" nick=reader server=
+[01:34:08]   chan#1 LabNet type=lobby unread=5 highlight=0 totalMessages=7
+[01:34:08]   chan#2 #lounge-lab type=channel unread=0 highlight=0 totalMessages=10
+    msg#20 <undefined> 
+[01:34:08]  network "DeadNet" nick=lounger server=
+[01:34:08]   chan#3 DeadNet type=lobby unread=3 highlight=0 totalMessages=3
+[01:34:08] --- asking server for an upload token (upload:auth)
+[01:34:08] upload token received: 7655f67b-3c6...
+[01:34:08] POST /uploads -> 200 {"url":"uploads/095e35ae8255ffa1/fixture-upload.txt"}
+[01:34:08] GET http://127.0.0.1:18093/uploads/095e35ae8255ffa1/fixture-upload.txt -> 200
+[01:34:08] fetched body matches uploaded file: true

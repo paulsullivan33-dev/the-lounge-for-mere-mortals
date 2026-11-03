@@ -1,0 +1,21 @@
+$ find home-private/logs -type f
+home-private/logs/reader.sqlite3
+home-private/logs/reader/labnet-4-5f1c-444f-8db6-bc83729522ea/#lounge-lab.log
+
+$ python3: tables and sample rows in reader.sqlite3
+tables: ['options', 'messages', 'sqlite_sequence', 'migrations', 'rollback_steps']
+('c12bda84-5f1c-444f-8db6-bc83729522ea', '#lounge-lab', 1793669544622, 'join', '{"from":{"mode":"","nick":"reader"},"text":"","self":true,"hostmask":"lounger@127.0.0.1","gecos":""}')
+('c12bda84-5f1c-444f-8db6-bc83729522ea', '#lounge-lab', 1793669547057, 'message', '{"from":{"mode":"","nick":"reader"},"text":"First message from the signed-in reader","self":true,"highlight":false,"users":["reader"]}')
+('c12bda84-5f1c-444f-8db6-bc83729522ea', '#lounge-lab', 1793669548653, 'message', '{"from":{"mode":"","nick":"greeter"},"text":"Welcome in, reader - this one arrives live","self":false,"highlight":true,"users":["reader"]}')
+('c12bda84-5f1c-444f-8db6-bc83729522ea', '#lounge-lab', 1793669551655, 'message', '{"from":{"mode":"","nick":"greeter"},"text":"reader: a highlight while you are watching","self":false,"highlight":true,"users":["reader"]}')
+total messages stored: 8
+
+$ cat the text log for the channel
+[2026-11-03T01:32:24.622Z] *** reader (lounger@127.0.0.1) joined
+[2026-11-03T01:32:27.057Z] <reader> First message from the signed-in reader
+[2026-11-03T01:32:28.653Z] <greeter> Welcome in, reader - this one arrives live
+[2026-11-03T01:32:31.655Z] <greeter> reader: a highlight while you are watching
+[2026-11-03T01:32:39.657Z] <greeter> While you were away: missed message one
+[2026-11-03T01:32:42.659Z] <greeter> reader: a highlight that waited for you
+[2026-11-03T01:32:45.661Z] <greeter> While you were away: missed message three
+[2026-11-03T01:33:02.665Z] *** greeter (greeter@127.0.0.1) left (bye)

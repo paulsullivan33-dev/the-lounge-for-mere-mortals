@@ -1,0 +1,34 @@
+[01:30:39] socket connected S8lX-oyKYXhNkhbkAAAF
+[01:30:39] event configuration: public=true themes=[default, morning] fileUpload=disabled defaultNetwork=Libera.Chat
+[01:30:39] event auth:success
+[01:30:39] event init: active=-1 networks=0
+[01:30:39] --- creating network LabNet (127.0.0.1:16667), joining #lounge-lab
+[01:30:39] event network: "LabNet" channels:
+[01:30:39]   chan#1 LabNet type=lobby unread=0 highlight=0 totalMessages=0
+[01:30:39]   chan#2 #lounge-lab type=channel unread=0 highlight=0 totalMessages=0
+[01:30:39] event msg chan#1: <undefined> Network created, connecting to 127.0.0.1:16667...
+[01:30:39] event msg chan#1: <undefined> Connected to the network.
+[01:30:39] event network:status {"connected":true,"secure":true,"network":"4dc6d1d1-0e7d-4ae3-a4d7-01a1e59d2503"}
+[01:30:39] event msg chan#1: <undefined> You're now known as lounger
+[01:30:39] event nick: lounger
+[01:30:39] event msg chan#1: <undefined> 
+[01:30:39] event msg chan#1: <undefined> 
+[01:30:39] event msg chan#1: <undefined> 
+[01:30:39] event msg chan#1: <undefined> - Welcome to the lab IRC server.
+- This is a fixture for a guide lab: invented, local, loopback only.
+
+[01:30:40] event msg chan#2: <lounger>   [self]
+[01:30:40] event users chan#2
+[01:30:40] event msg chan#2: <undefined> 
+[01:30:40] event topic chan#2 ""
+[01:30:40] event users chan#2
+[01:30:42] >>> input chan#2: Hello from The Lounge window
+[01:30:42] event msg chan#2: <lounger> Hello from The Lounge window  [self]
+[01:30:42] event msg chan#2: <greeter> Afternoon, the fixture channel is open for the lab.
+[01:30:43] >>> input chan#2: /me settles in
+[01:30:43] event msg chan#2: <lounger> settles in  [self]
+[01:30:48] event msg chan#2: <greeter> lounger: that one was aimed at you, your client should flag it  [HIGHLIGHT]
+[01:30:54] >>> open chan#2 (mark as read)
+[01:30:54] event open: chan#2
+[01:30:55] --- disconnecting socket (public mode: session should vanish)
+[01:30:55] socket disconnected: io client disconnect

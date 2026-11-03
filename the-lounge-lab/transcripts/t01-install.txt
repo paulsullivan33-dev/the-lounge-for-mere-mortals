@@ -1,0 +1,38 @@
+
+added 259 packages in 3m
+
+70 packages are looking for funding
+  run `npm fund` for details
+v4.5.2
+$ thelounge --version
+v4.5.2
+
+$ thelounge --help
+2026-11-03 01:26:47 [WARN] You are currently running The Lounge as root. We highly discourage running as root!
+Usage: thelounge [options] [command]
+
+Options:
+  -v, --version             output the version number
+  -c, --config <key=value>  override entries of the configuration file, must be
+                            specified for each entry that needs to be overriden
+  -h, --help                display help for command
+
+Commands:
+  start [options]           Start the server
+  install <package>         Install a theme or a package
+  uninstall <package>       Uninstall a theme or a package
+  upgrade [packages...]     Upgrade installed themes and packages to their
+                            latest versions
+  outdated                  Check for any outdated packages
+  storage                   various utilities related to the message storage
+  list                      List all users
+  remove <name>             Remove an existing user
+  edit <name>               Edit user file located at
+                            /home/hatch/.thelounge/users/<name>.json
+  add [options] <name>      Add a new user
+  reset [options] <name>    Reset user password
+  help [command]            display help for command
+
+Environment variable:
+  THELOUNGE_HOME            Path for all configuration files and folders. Defaults to /home/hatch/.thelounge
+

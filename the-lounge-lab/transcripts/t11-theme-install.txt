@@ -1,0 +1,16 @@
+$ thelounge install thelounge-theme-solarized
+2026-11-03 01:33:39 [WARN] You are currently running The Lounge as root. We highly discourage running as root!
+2026-11-03 01:33:40 [INFO] Retrieving information about the package...
+2026-11-03 01:33:49 [INFO] Installing thelounge-theme-solarized v1.2.0...
+2026-11-03 01:33:51 [INFO] thelounge-theme-solarized v1.2.0 has been successfully installed.
+
+$ ls home-private/packages/node_modules/
+thelounge-theme-solarized
+
+$ thelounge outdated
+2026-11-03 01:33:51 [WARN] You are currently running The Lounge as root. We highly discourage running as root!
+2026-11-03 01:33:51 [INFO] Checking for outdated packages
+2026-11-03 01:33:52 [INFO] No outdated packages
+
+# After restarting the server with the theme installed, its log says:
+2026-11-03 01:33:57 [INFO] Package thelounge-theme-solarized v1.2.0 loaded

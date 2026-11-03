@@ -1,0 +1,47 @@
+# The generated config.js (home-private) - the settings this guide touches,
+# shown as "line: text". Everything else ships commented or at its default.
+
+17:    public: false,
+26:    host: undefined,
+32:    port: 9000,
+39:    bind: undefined,
+46:    reverseProxy: false,
+54:    maxHistory: 10000,
+93:    theme: "default",
+100:    prefetch: false,
+245:        host: "irc.libera.chat",
+246:        port: 6697,
+357:        port: 113,
+
+73:        enable: false,
+182:        enable: true,
+183:        maxFileSize: 10240,
+184:        baseUrl: null,
+
+244:        name: "Libera.Chat",
+245:        host: "irc.libera.chat",
+256:    // ### `lockNetwork`
+263:    lockNetwork: false,
+278:    messageStorage: ["sqlite", "text"],
+
+# defaults block (the network the Connect window offers first):
+        name: "Libera.Chat",
+        host: "irc.libera.chat",
+        port: 6697,
+        tls: true,
+        username: "thelounge",
+        realname: "",
+        join: "#thelounge",
+$ thelounge storage --help
+2026-11-03 01:34:44 [WARN] You are currently running The Lounge as root. We highly discourage running as root!
+Usage: thelounge storage [options] [command]
+
+various utilities related to the message storage
+
+Options:
+  -h, --help          display help for command
+
+Commands:
+  migrate [username]  Migrate message storage where needed
+  clean [user]        Delete messages from the DB based on the storage policy
+  help [command]      display help for command

@@ -1,0 +1,25 @@
+[01:32:53] socket connected uJDRZK2Lp8jRs2-9AAAF
+[01:32:53] event auth:start (server asks for sign-in)
+[01:32:53] sent auth:perform with saved session token
+[01:32:53] event configuration: public=false themes=[default, morning] fileUpload=disabled defaultNetwork=Libera.Chat
+[01:32:53] event auth:success
+[01:32:53] event init: active=2 networks=1
+[01:32:53]  network "LabNet" nick=reader server=
+[01:32:53]   chan#1 LabNet type=lobby unread=5 highlight=0 totalMessages=7
+[01:32:53]   chan#2 #lounge-lab type=channel unread=2 highlight=1 totalMessages=8
+    msg#14 <greeter> reader: a highlight that waited for you
+    msg#15 <greeter> While you were away: missed message three
+[01:32:53] --- after reconnect: channel unread=2 highlight=1
+[01:32:53] event more: chan#undefined totalMessages=8 messages=8
+[01:32:53]     older msg#8 <reader> 
+[01:32:53]     older msg#9 <undefined> 
+[01:32:53]     older msg#10 <reader> First message from the signed-in reader
+[01:32:53]     older msg#11 <greeter> Welcome in, reader - this one arrives live
+[01:32:53]     older msg#12 <greeter> reader: a highlight while you are watching
+[01:32:53]     older msg#13 <greeter> While you were away: missed message one
+[01:32:53]     older msg#14 <greeter> reader: a highlight that waited for you
+[01:32:53]     older msg#15 <greeter> While you were away: missed message three
+[01:32:54] >>> open chan#2 (mark as read)
+[01:32:54] event open: chan#2
+[01:32:55] --- verdict printed above; disconnecting
+[01:32:55] socket disconnected: io client disconnect

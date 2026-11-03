@@ -1,0 +1,12 @@
+# miniircd 2.3 started on 127.0.0.1:16667 (fixture IRC server, loopback only)
+$ python3 speaker-probe: NICK probe / USER probe
+:localhost 001 probe :Hi, welcome to IRC
+:localhost 002 probe :Your host is localhost, running version miniircd-2.3
+:localhost 003 probe :This server was created sometime
+:localhost 004 probe localhost miniircd-2.3 o o
+:localhost 251 probe :There are 1 users and 0 services on 1 server
+:localhost 375 probe :- localhost Message of the day -
+:localhost 372 probe :- Welcome to the lab IRC server.
+:localhost 372 probe :- This is a fixture for a guide lab: invented, local, loopback only.
+:localhost 376 probe :End of /MOTD command
+

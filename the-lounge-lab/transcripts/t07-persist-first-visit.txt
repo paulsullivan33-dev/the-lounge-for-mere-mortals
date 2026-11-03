@@ -1,0 +1,36 @@
+[01:32:22] socket connected NZh_kcIdNqK6BdzSAAAD
+[01:32:22] event auth:start (server asks for sign-in)
+[01:32:22] sent auth:perform with user + password
+[01:32:23] event configuration: public=false themes=[default, morning] fileUpload=disabled defaultNetwork=Libera.Chat
+[01:32:23] event auth:success
+[01:32:23] event init: active=-1 networks=0
+[01:32:23]   session token issued by server (saved for reconnect)
+[01:32:23] --- creating network LabNet (127.0.0.1:16667), joining #lounge-lab
+[01:32:23] event network: "LabNet" channels:
+[01:32:23]   chan#1 LabNet type=lobby unread=0 highlight=0 totalMessages=0
+[01:32:23]   chan#2 #lounge-lab type=channel unread=0 highlight=0 totalMessages=0
+[01:32:23] event msg chan#1: <undefined> Network created, connecting to 127.0.0.1:16667...
+[01:32:23] event msg chan#1: <undefined> Connected to the network.
+[01:32:23] event network:status {"connected":true,"secure":true,"network":"c12bda84-5f1c-444f-8db6-bc83729522ea"}
+[01:32:23] event msg chan#1: <undefined> You're now known as reader
+[01:32:23] event nick: reader
+[01:32:23] event msg chan#1: <undefined> 
+[01:32:23] event msg chan#1: <undefined> 
+[01:32:23] event msg chan#1: <undefined> 
+[01:32:23] event msg chan#1: <undefined> - Welcome to the lab IRC server.
+- This is a fixture for a guide lab: invented, local, loopback only.
+
+[01:32:24] event msg chan#2: <reader>   [self]
+[01:32:24] event users chan#2
+[01:32:24] event msg chan#2: <undefined> 
+[01:32:24] event topic chan#2 ""
+[01:32:24] event users chan#2
+[01:32:27] >>> input chan#2: First message from the signed-in reader
+[01:32:27] event msg chan#2: <reader> First message from the signed-in reader  [self]
+[01:32:28] event msg chan#2: <greeter> Welcome in, reader - this one arrives live  [HIGHLIGHT]
+[01:32:31] event msg chan#2: <greeter> reader: a highlight while you are watching  [HIGHLIGHT]
+[01:32:39] >>> open chan#2 (mark as read, then leave)
+[01:32:39] event open: chan#2
+[01:32:39] event msg chan#2: <greeter> While you were away: missed message one
+[01:32:40] --- disconnecting socket; IRC connection must STAY up (private mode)
+[01:32:40] socket disconnected: io client disconnect
